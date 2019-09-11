@@ -12,11 +12,11 @@ namespace Linq_Query_To_Array
         {
             //Data Source
             string[] subjects = { "art", "programming", "music", "chemistry" };
-            //Linq Mthod Query
+            //Linq Query Syntaz
             var query = from subject in subjects
                         where subject.Contains('m')
                         select subject;
-            //Query Syntax
+            //Method Syntax
             var linqQuery = subjects.Where(x => x.Contains('c'));
 
             //Query execution

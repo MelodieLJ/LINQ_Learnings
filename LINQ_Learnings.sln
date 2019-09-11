@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Linq_Query_To_Array", "Linq
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Short words", "Short words\Short words.csproj", "{A3A94064-5052-4E95-8835-74E027D30486}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Word Length", "Word Length\Word Length.csproj", "{8ACF5DD3-27AF-480C-965E-A410A8056465}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{A3A94064-5052-4E95-8835-74E027D30486}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A3A94064-5052-4E95-8835-74E027D30486}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A3A94064-5052-4E95-8835-74E027D30486}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8ACF5DD3-27AF-480C-965E-A410A8056465}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8ACF5DD3-27AF-480C-965E-A410A8056465}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8ACF5DD3-27AF-480C-965E-A410A8056465}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8ACF5DD3-27AF-480C-965E-A410A8056465}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
