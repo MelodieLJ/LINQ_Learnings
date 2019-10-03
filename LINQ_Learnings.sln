@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Word Length", "Word Length\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Join_Operators", "Join_Operators\Join_Operators.csproj", "{9DCEA9AF-70A9-40C5-A60B-9CBF5F8880ED}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Delegate Declarations", "Delegate Declarations\Delegate Declarations.csproj", "{459FC2C6-4B52-4F24-9A97-1E6AAAEC9F25}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{9DCEA9AF-70A9-40C5-A60B-9CBF5F8880ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9DCEA9AF-70A9-40C5-A60B-9CBF5F8880ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9DCEA9AF-70A9-40C5-A60B-9CBF5F8880ED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{459FC2C6-4B52-4F24-9A97-1E6AAAEC9F25}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{459FC2C6-4B52-4F24-9A97-1E6AAAEC9F25}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{459FC2C6-4B52-4F24-9A97-1E6AAAEC9F25}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{459FC2C6-4B52-4F24-9A97-1E6AAAEC9F25}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
