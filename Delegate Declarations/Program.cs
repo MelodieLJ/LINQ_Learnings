@@ -15,10 +15,12 @@ namespace Delegate_Declarations
         static void Main(string[] args)
         {
             string entry = Console.ReadLine();
-            Console.WriteLine("First Example: " + greetingsFunc1(entry));
-            Console.WriteLine("Second Example: " + greetingsFunc2(entry));
-            Console.WriteLine("Third Example: " + greetingsFunc3(entry));
-            Console.WriteLine("Fourth Example: " + greetingsFunc4(entry));
+            //Console.WriteLine("First Example: " + greetingsFunc1(entry));
+            //Console.WriteLine("Second Example: " + greetingsFunc2(entry));
+            //Console.WriteLine("Third Example: " + greetingsFunc3(entry));
+            //Console.WriteLine("Fourth Example: " + greetingsFunc4(entry));
+
+            NewGreeting((result) => result + entry);
         }
         //The Greetings type can be used to declare variables in several ways:
 
@@ -43,5 +45,12 @@ namespace Delegate_Declarations
         //If the only statement in the lamba expression is the return statement, the shortened form below can be used
         public static Greetings greetingsFunc4 = (result) => "Hello, " + result + "!";
 
+        //Passing a delegate to a method
+        //NewGreetings takes a delegate as an argument - the passed in delegate must match the Greetings typr, it must accept a string parameter and return a string
+        public static void NewGreeting(Greetings func)
+        {
+            string result = func("Hello, ");
+            Console.WriteLine(result);
+        }
     }
 }

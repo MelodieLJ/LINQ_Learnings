@@ -10,42 +10,46 @@ namespace Join_Operators
     {
         static void Main(string[] args)
         {
-            List<DepartmentClass> departments = new List<DepartmentClass>();
-            departments.Add(new DepartmentClass { DepartmentID = 1, DepartmentName = "IT" });
-            departments.Add(new DepartmentClass { DepartmentID = 2, DepartmentName = "Finance" });
-            departments.Add(new DepartmentClass { DepartmentID = 3, DepartmentName = "Marketing" });
+            List<Course> courses = new List<Course>();
+            courses.Add(new Course { CourseID = 1, CourseName = "Art" });
+            courses.Add(new Course { CourseID = 2, CourseName = "Programming" });
+            courses.Add(new Course { CourseID = 3, CourseName = "Music" });
 
-            List<EmployeeClass> employees = new List<EmployeeClass>();
-            employees.Add(new EmployeeClass { DepartmentID = 1, EmployeeID = 1, EmployeeName = "Mel" });
-            employees.Add(new EmployeeClass { DepartmentID = 2, EmployeeID = 2, EmployeeName = "Sheena" });
-            employees.Add(new EmployeeClass { DepartmentID = 3, EmployeeID = 3, EmployeeName = "Nirmal" });
+            List<Student> students = new List<Student>();
+            students.Add(new Student { StudentName = "Mel", CourseID = 2, StudentID = 123 });
+            students.Add(new Student { StudentName = "Art", CourseID = 1, StudentID = 234 });
 
 
-            var query = (from e in employees
-                         join d in departments
-                         on e.DepartmentID equals d.DepartmentID
-                         select new {
-                             e.EmployeeName,
-                             d.DepartmentName
+            var query = (from c in courses
+                         join s in students
+                         on c.CourseID equals s.CourseID
+                         select new
+                         {
+                             s.StudentName,                     
+                             c.CourseName
                          });
+
+            //var z = students.SelectMany()
 
             foreach (var x in query)
             {
-                Console.WriteLine($"Employee Name = {x.EmployeeName}, Department Name = {x.DepartmentName}");
+                Console.WriteLine($"Student Name = {x.StudentName}, Course Name = {x.CourseName}");
             }
+
+
         }
     }
 
-    public class DepartmentClass
+    public class Student
     {
-        public int DepartmentID { get; set; }
-        public string DepartmentName { get; set; }
+        public string StudentName { get; set; }
+        public int StudentID { get; set; }
+        public int CourseID { get; set; }
     }
 
-    public class EmployeeClass
+    public class Course
     {
-        public int EmployeeID { get; set; }
-        public string EmployeeName { get; set; }
-        public int DepartmentID { get; set; }
+        public string CourseName { get; set; }
+        public int CourseID { get; set; }
     }
 }
