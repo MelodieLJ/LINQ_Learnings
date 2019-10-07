@@ -52,5 +52,6 @@ namespace Delegate_Declarations
             string result = func("Hello, ");
             Console.WriteLine(result);
         }
+
     }
 }
